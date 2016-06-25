@@ -6,7 +6,9 @@
 #include <cstring>
 #include <cmath>
 #include <iostream>
-#include <cudautils.h>
+#include <algorithm>
+#include <cuda.h>
+#include <cuda_runtime.h>
 
 #include "cudaImage.h"
 #include "cudaSift.h"

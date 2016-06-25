@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{ad0e5d3f-f603-4111-a1ff-565a6544406c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\cudaImage.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaSiftD.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaSiftH.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\matching.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cudaImage.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaSift.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaSiftD.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaSiftH.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudautils.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\geomFuncs.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mainSift.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
